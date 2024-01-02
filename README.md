@@ -1,1 +1,1 @@
-# TFG
+# Skin Tumors Classification
