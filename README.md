@@ -15,34 +15,5 @@ This project is based on the article **[Skin Lesion Analysis Toward Melanoma Det
 ``` 
 3. Download the dataset from  <a href="https://www.kaggle.com/datasets/andrewmvd/isic-2019"> Kaggle </a>.
 4. Copy the images in [/data/images/](/data/images/). <br/>
-
-
-
-
-
-
-## Getting Started
-
-So that the repository is successfully cloned and the project runs smoothly, a few steps need to be followed.
-
-### Requisites
-
-* A good amount of cores (GPU is better) and RAM.
-* Free disk space (> 10GB) is required.
-* ``anaconda``, ``pytorch``, and ``torchvision`` are required.
-
-### Installation and Use
-
-```sh
-   $ git clone https://github.com/antonioscardace/ISIC-2019-v2.git
-   $ cd YOUR_PATH/ISIC-2019-v2/
-   $ mkdir models
-``` 
-
-Now download the dataset from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/isic-2019) and put images in [/data/images/](/data/images/). <br/>
-Then, you can use any notebook in [/notebooks/](/notebooks/).
-
-## Credits
-
-Author: [Antonio Scardace](https://linktr.ee/antonioscardace).<br/>
-You can find them in [/docs/credits.txt](/docs/credits.txt).
+5. Run the dataset and train notebook
+6. Run the test and demo notebook
