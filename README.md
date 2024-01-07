@@ -15,5 +15,5 @@ This project is based on the article **[Skin Lesion Analysis Toward Melanoma Det
 ``` 
 3. Download the dataset from  <a href="https://www.kaggle.com/datasets/andrewmvd/isic-2019"> Kaggle </a>.
 4. Copy the images in [/data/images/](/data/images/). <br/>
-5. Run the dataset and train notebook
+5. Run the dataset and train notebooks
 6. Run the test and demo notebook
