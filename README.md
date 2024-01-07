@@ -1,41 +1,22 @@
-# ISIC-2019-v2 | Skin Tumors Classification
+# Skin Tumors Classification
 
-_Personal Machine Learning Project to Practice the Following Skills:_
-* Knowledge of Machine Learning concepts
-* Knowledge of CNNs
-* Knowledge of Pytorch and Torchvision
-* Knowledge of Python and Jupyter Notebooks
+The project aims to classify skin tumors by their images as  "**Benign Tumors**" or "**Malignant Tumors**".<br/>
+The dataset used if from the ISIC 2019 challenge.  
+This project is based on the article **[Skin Lesion Analysis Toward Melanoma Detection 2018: A Challenge Hosted by the International Skin Imaging Collaboration (ISIC)](https://arxiv.org/abs/1902.03368)**. 
 
-[![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/overview/main)
-[![License](https://img.shields.io/github/license/antonioscardace/ISIC-2019-v2.svg)](https://github.com/antonioscardace/ISIC-2019-v2/blob/master/LICENSE)
-
-## Introduction
-
-The project aims to analyse and classify skin lesions by their images. The idea comes from the paper named **[Skin Lesion Analysis Toward Melanoma Detection 2018: A Challenge Hosted by the International Skin Imaging Collaboration (ISIC)](https://arxiv.org/abs/1902.03368)**. This dataset contains the training data for the ISIC 2019 challenge.
-
-<img src="docs/images/examples.jpg" alt="Examples"/>
-
+## How to run the project
+1. Clone this repository
+```sh
+   $ git clone https://github.com/noeliamunozgarcia/Skin-Tumors-Classification.git
+``` 
+2. Navigate to the directory containing this `README` in a terminal.
+```sh
+    $ cd YOUR_PATH/Skin-Tumors-Classification/
+``` 
+3. Download the dataset from  <a href="https://www.kaggle.com/datasets/andrewmvd/isic-2019"> Kaggle </a>.
 The dataset has been downloaded from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/isic-2019). It contains **25,331 images** available for the classification of dermoscopic images among 8 different diagnostic categories: 
-* Melanocytic nevus _(NV)_ **(50.83%)**
-* Melanoma _(MEL)_ **(17.85%)**
-* Basal cell carcinoma _(BCC)_ **(13.12%)**
-* Benign keratosis (solar lentigo / seborrheic keratosis / lichen planus-like keratosis) _(BKL)_ **(10.36%)**
-* Actinic keratosis _(AK)_ **(3.42%)**
-* Squamous cell carcinoma _(SCC)_ **(2.48%)**
-* Vascular lesion _(VASC)_ **(1.00%)**
-* Dermatofibroma _(DF)_ **(0.94%)**
 
-Specifically, I focused my attention just on the tumours' images. Thus, I analysed **19,080 images** among 5 different diagnostic categories among the cited above: 
-* Melanocytic nevus _(NV)_ **(55.72%)**
-* Melanoma _(MEL)_ **(22.78%)**
-* Basal cell carcinoma _(BCC)_ **(17.01%)**
-* Squamous cell carcinoma _(SCC)_ **(03.26%)**
-* Dermatofibroma _(DF)_ **(01.23%)**
-
-As a first version of the project, I can classify the images as just "**Benign Tumors**" or "**Malignant Tumors**".<br/>
-*NV* and *DF* are classified as Benign Tumors. The others are classified as Malignant Tumors.
-
-## Structure
+# Structure
 
 The project structure is designed as follows:
 
