@@ -14,43 +14,12 @@ This project is based on the article **[Skin Lesion Analysis Toward Melanoma Det
     $ cd YOUR_PATH/Skin-Tumors-Classification/
 ``` 
 3. Download the dataset from  <a href="https://www.kaggle.com/datasets/andrewmvd/isic-2019"> Kaggle </a>.
-The dataset has been downloaded from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/isic-2019). It contains **25,331 images** available for the classification of dermoscopic images among 8 different diagnostic categories: 
+4. Copy the images in [/data/images/](/data/images/). <br/>
 
-# Structure
 
-The project structure is designed as follows:
 
-```
-.
-├── /settings.yml     # It is the configuration file.
-├── /data/images/     # The dataset images.
-├── /data/raw/        # The original immutable dataset CSV files.
-├── /data/interim/    # Intermediate data that has been transformed.
-├── /data/processed/  # The final, canonical dataset for training and testing.
-├── /src/data/        # Classes to define and work with the dataset.
-├── /src/model/       # Classes to define the CNN, train and test the model.
-├── /src/utils/       # Classes to help the project development.
-├── /models/          # Trained and serialized models' files.
-├── /notebooks/       # Notebooks that users use to build the dataset and train/test the model.
-└── settings.yml      # Configuration file.
-```
 
-## Machine Learning
 
-The Dataset was divided into a Training Set **(85%)**, and a Test Set **(15%)**.<br/>
-I did Data Augmentation on the Training Set to improve the model performance.
-
-I implemented a CNN composed of 4 Convolutional Layers and 3 Fully Connected Layers. To reduce the overfitting risk, I used Dropout layers before the first two FC layers. Batch Normalization is also used before each layer, except the last, to accelerate the model convergence.<br/>
-To improve the model performance, I had to choose two essential components. As a loss function, I used the Cross-Entropy function. Instead, as an optimizer, I used the Stochastic Gradient Descent (SGD), which is computationally much less expensive than the typical Gradient Descent.
-
-The final model has an accuracy of **78.41%** on the Test Set.<br/>
-Anyway, the most significant class, Malignant Tumors, is the most precise (**88.57%**).
-
-<img src="docs/images/cmatrix.png" alt="Test Confusion Matrix"/>
-
-## Demo Example
-
-<img src="docs/snaps/demo.png" alt="Demo"/>
 
 ## Getting Started
 
